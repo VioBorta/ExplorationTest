@@ -12,14 +12,16 @@ loginButton.addEventListener("click", (e) => {
   const password = loginForm.password.value;
 
   if (username === "user" && password === "pass") {
-    window.localStorage.setItem(username, "user");
-    window.localStorage.setItem(password, "web_dev");
-    console.log("logged");
+    window.localStorage.setItem('user', JSON.stringify(loginForm.username.value));
+    window.localStorage.setItem('pass', JSON.stringify(loginForm.password.value));
     loginId.style.display = "none";
     avatarID.style.display = "block";
     loginForm.style.display="none"
     userLogged.style.display = "block";
+    console.log(window.localStorage.getItem("user"))
   } else {
     loginErrorMsg.style.opacity = 1;
   }
 });
+
+
