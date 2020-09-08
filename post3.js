@@ -12,8 +12,12 @@ window.addEventListener("load", (e) => {
     loginId.style.display = 'none';
     userID.style.display = 'block';
     logout.style.display = 'block';
+    loginId.style.opacity = 0;
   } else {
+    userID.style.opacity = 0;
+    avatarID.style.opacity = 0;
     post3Img.style.display = "none";
+
     post3Img.style.opacity = 0;
     avatarID.style.display = "none";
     loginId.style.display = 'block';

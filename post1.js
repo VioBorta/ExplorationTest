@@ -10,6 +10,7 @@ window.addEventListener("load", (e) => {
     avatarID.style.display = "block";
     loginId.style.display = "none";
     userID.style.display = "block";
+    loginId.style.opacity = 0;
     logout.style.display = "block";
   } else {
     post1Img.style.display = "none";
