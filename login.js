@@ -5,6 +5,7 @@ const loginId = document.getElementById("loginId");
 const avatarID = document.getElementById("avatarID");
 const userLogged = document.getElementById("userLogged");
 const img = document.getElementById("img");
+const userID = document.getElementById("userID");
 
 loginButton.addEventListener("click", (e) => {
   e.preventDefault();
@@ -12,13 +13,18 @@ loginButton.addEventListener("click", (e) => {
   const password = loginForm.password.value;
 
   if (username === "user" && password === "pass") {
-    window.localStorage.setItem('user', JSON.stringify(loginForm.username.value));
-    window.localStorage.setItem('pass', JSON.stringify(loginForm.password.value));
+    window.localStorage.setItem(
+      "user",
+      JSON.stringify(loginForm.username.value)
+    );
+    window.localStorage.setItem(
+      "pass",
+      JSON.stringify(loginForm.password.value)
+    );
     loginId.style.display = "none";
     avatarID.style.display = "block";
-    loginForm.style.display="none"
+    loginForm.style.display = "none";
     userLogged.style.display = "block";
-    console.log(window.localStorage.getItem("user"))
   } else {
     loginErrorMsg.style.opacity = 1;
   }
