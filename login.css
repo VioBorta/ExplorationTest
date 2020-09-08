@@ -120,16 +120,24 @@
 #loginId{
   position: absolute; 
   right: 2%;
+  pointer-events: none;
+  display: none;
+  transition: opacity 0.4s ease-in-out;
 }
 
 #userID{
   position: absolute; 
   right: 6%;
+  pointer-events: none;
+  display: none;
+  transition: opacity 0.4s ease-in-out;
 }
 #avatarID {
   display: none;
   position: absolute; 
   right: 10%;
+  pointer-events: none;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .userClass{
