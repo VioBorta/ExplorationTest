@@ -25,6 +25,7 @@ loginButton.addEventListener("click", (e) => {
     avatarID.style.display = "block";
     loginForm.style.display = "none";
     userLogged.style.display = "block";
+    window.location.href = "index.html";
   } else {
     loginErrorMsg.style.opacity = 1;
   }
