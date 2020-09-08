@@ -119,12 +119,23 @@
 
 #loginId{
   position: absolute; 
-  right: 0;
+  right: 2%;
+}
+
+#userID{
+  position: absolute; 
+  right: 6%;
 }
 #avatarID {
   display: none;
   position: absolute; 
-  right: 0;
+  right: 10%;
+}
+
+.userClass{
+  display: none;
+  position: absolute; 
+  right: 2%;
 }
 
 #userLogged {
@@ -170,4 +181,16 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+
+#img {
+  display: none;
+}
+
+
+
+#logout{
+  position: absolute; 
+  right: 2%;
+  color: blue;
 }
