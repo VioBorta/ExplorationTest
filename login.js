@@ -1,10 +1,10 @@
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
-const hey = document.getElementById("hey");
 const loginId = document.getElementById("loginId");
 const avatarID = document.getElementById("avatarID");
 const userLogged = document.getElementById("userLogged");
+const img = document.getElementById("img");
 
 loginButton.addEventListener("click", (e) => {
   e.preventDefault();

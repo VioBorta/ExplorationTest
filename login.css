@@ -119,12 +119,18 @@
 
 #loginId{
   position: absolute; 
-  right: 0;
+  right: 2%;
 }
 #avatarID {
   display: none;
   position: absolute; 
-  right: 0;
+  right: 6%;
+}
+
+.userClass{
+  display: none;
+  position: absolute; 
+  right: 2%;
 }
 
 #userLogged {
@@ -171,3 +177,13 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+
+#img {
+  display: none;
+}
+
+#postImg{
+  display: none;
+}
+
+
