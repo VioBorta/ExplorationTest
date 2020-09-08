@@ -194,3 +194,27 @@ input[type=text], input[type=password] {
   right: 2%;
   color: blue;
 }
+
+#post1Img{
+  pointer-events: none;
+  display: none;
+  transition: opacity 0.4s ease-in-out;
+}
+
+#post2Img{
+  pointer-events: none;
+  display: none;
+  transition: opacity 0.4s ease-in-out;
+}
+
+#post3Img{
+  pointer-events: none;
+  display: none;
+  transition: opacity 0.4s ease-in-out;
+}
+
+#post4Img{
+  pointer-events: none;
+  display: none;   
+   transition: opacity 0.4s ease-in-out;
+}

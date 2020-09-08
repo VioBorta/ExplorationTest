@@ -14,6 +14,7 @@ window.addEventListener("load", (e) => {
     logout.style.display = 'block';
   } else {
     post4Img.style.display = "none";
+    post4Img.style.opacity = 0;
     avatarID.style.display = "none";
     loginId.style.display = 'block';
     userID.style.display = 'none';
