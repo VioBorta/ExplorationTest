@@ -7,13 +7,14 @@ const logout = document.getElementById("logout");
 
 window.addEventListener("load", (e) => {
   if (window.localStorage.getItem("user")) {
-    post3Img.style.display = "block";
+    post3Img.style.display = "block";    
     avatarID.style.display = "block";
     loginId.style.display = 'none';
     userID.style.display = 'block';
     logout.style.display = 'block';
   } else {
     post3Img.style.display = "none";
+    post3Img.style.opacity = 0;
     avatarID.style.display = "none";
     loginId.style.display = 'block';
     userID.style.display = 'none';
