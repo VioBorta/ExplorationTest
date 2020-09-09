@@ -13,7 +13,6 @@ window.addEventListener("load", (e) => {
     userID.style.display = 'block';
     logout.style.display = 'block';
     loginId.style.opacity = 0;
-    logout.style.opacity = 0;
   } else {
     userID.style.opacity = 0;
     avatarID.style.opacity = 0;
