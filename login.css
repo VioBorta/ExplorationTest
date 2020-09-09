@@ -120,16 +120,21 @@
 #loginId{
   position: absolute; 
   right: 2%;
+  display: none;
 }
 
 #userID{
   position: absolute; 
   right: 6%;
+  display: none;
+
 }
 #avatarID {
   display: none;
   position: absolute; 
   right: 10%;
+  display: none;
+
 }
 
 .userClass{
@@ -193,4 +198,5 @@ input[type=text], input[type=password] {
   position: absolute; 
   right: 2%;
   color: blue;
+  display: none;
 }
