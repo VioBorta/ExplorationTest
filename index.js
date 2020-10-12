@@ -5,7 +5,9 @@ const logout = document.getElementById("logout");
 const avatarID = document.getElementById("avatarID");
 
 window.addEventListener("load", (e) => {
-  if (window.localStorage.getItem("user")) {
+  var cookie = document.cookie;
+
+  if (cookie) {
     avatarID.style.display = "block";
     loginId.style.display = "none";
     userID.style.display = "block";
