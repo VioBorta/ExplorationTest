@@ -13,14 +13,17 @@ loginButton.addEventListener("click", (e) => {
   const password = loginForm.password.value;
 
   if (username === "user" && password === "pass") {
-    window.localStorage.setItem(
-      "user",
-      JSON.stringify(loginForm.username.value)
-    );
-    window.localStorage.setItem(
-      "pass",
-      JSON.stringify(loginForm.password.value)
-    );
+    // window.localStorage.setItem(
+    //   "user",
+    //   JSON.stringify(loginForm.username.value)
+    // );
+    // window.localStorage.setItem(
+    //   "pass",
+    //   JSON.stringify(loginForm.password.value)
+    // );
+
+    document.cookie="username=John Doe";
+    // document.cookie="password=pass";
     loginId.style.display = "none";
     avatarID.style.display = "block";
     loginForm.style.display = "none";
@@ -30,5 +33,3 @@ loginButton.addEventListener("click", (e) => {
     loginErrorMsg.style.opacity = 1;
   }
 });
-
-
