@@ -5,7 +5,9 @@ const userID = document.getElementById("userID");
 const logout = document.getElementById("logout");
 
 window.addEventListener("load", (e) => {
-  if (document.cookie) {
+  var cookie = document.cookie;
+
+  if (cookie) {
     post1Img.style.display = "block";
     avatarID.style.display = "block";
     loginId.style.display = "none";

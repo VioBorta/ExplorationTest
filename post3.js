@@ -6,7 +6,9 @@ const userID = document.getElementById("userID");
 const logout = document.getElementById("logout");
 
 window.addEventListener("load", (e) => {
-  if (window.localStorage.getItem("user")) {
+  var cookie = document.cookie;
+
+  if (cookie) {
     post3Img.style.display = "block";    
     avatarID.style.display = "block";
     loginId.style.display = 'none';
