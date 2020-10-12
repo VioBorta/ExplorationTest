@@ -13,8 +13,7 @@ loginButton.addEventListener("click", (e) => {
   const password = loginForm.password.value;
 
   if (username === "user" && password === "pass") {
-    document.cookie="username=user";
-    document.cookie="password=pass";
+    document.cookie="username=user; password=pass";
     loginId.style.display = "none";
     avatarID.style.display = "block";
     loginForm.style.display = "none";
