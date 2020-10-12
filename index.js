@@ -5,9 +5,9 @@ const logout = document.getElementById("logout");
 const avatarID = document.getElementById("avatarID");
 
 window.addEventListener("load", (e) => {
-  var cookie = document.cookie;
+  var cookieJs = document.cookie;
 
-  if (cookie) {
+  if (cookieJs) {
     avatarID.style.display = "block";
     loginId.style.display = "none";
     userID.style.display = "block";
@@ -22,6 +22,9 @@ window.addEventListener("load", (e) => {
 
 logout.addEventListener("click", (e) => {
   e.preventDefault();
-  localStorage.clear();
+  var cookieJs = document.cookie;
+
   window.location.reload();
+  document.cookie = cookieJs + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+
 });
