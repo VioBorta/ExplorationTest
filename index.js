@@ -23,8 +23,6 @@ window.addEventListener("load", (e) => {
 logout.addEventListener("click", (e) => {
   e.preventDefault();
   var cookieJs = document.cookie;
-
   window.location.reload();
   document.cookie = cookieJs + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-
 });
